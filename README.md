@@ -5,13 +5,16 @@ This is a out-of-the-box calculator which mimics the look and feel of a MAC OS c
 
 ##### Code Example ####
 
-`import React from 'react';
+```
+import React from 'react';
 import { render} from 'react-dom';
-import Calculator from '../../src';
+import Calculator from 'react-newcalculator';
+
 const App = () => (
     <Calculator />
 );
-render(<App />, document.getElementById("root"));``
+render(<App />, document.getElementById("root"));
+```
 
 #### Motivation ####
 
