@@ -1,0 +1,44 @@
+{
+  "name": "react-newcalculator",
+  "version": "2.0.1",
+  "description": "A React calculator",
+  "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PalsRoy/react-calculator.git"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack",
+    "transpile": "babel src -d build --copy-files",
+    "prepublishOnly": "npm run transpile"
+  },
+  "author": {
+    "name": "PalsRoy"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.3.3"
+  },
+  "dependencies": {
+    "mathjs": "^5.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mathjs": "^5.4.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
